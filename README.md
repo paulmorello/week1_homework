@@ -1,7 +1,7 @@
 # homework
 
-Doctor: "I'm sorry but you suffer from a terminal illness and have only 10 to live."
+*Doctor:* "I'm sorry but you suffer from a terminal illness and have only __10__ to live."
 
-Patient: "What do you mean, 10? 10 what? Months? Weeks?!"
+*Patient:* "What do you mean, __10__? __10__ what? Months? Weeks?!"
 
-Doctor: "Nine."
+*Doctor:* __"Nine."__
