@@ -1,7 +1,7 @@
 
 // PT Planner
 
-var origin = 'Southern Cross';
+var origin = 'Flinders Street';
 var destination = 'Glenferrie';
 
 var alamein = ['Flinders Street', 'Richmond', 'East Richmond', 'Burnley', 'Hawthorn', 'Glenferrie'];
@@ -40,31 +40,40 @@ if (alameinDestination !== -1) {
 
 var finalDestination = function (origin, destination) {
   if (alameinOrigin !== -1 && alameinDestination !== -1) {
-    console.log(toDestinationAlamein + ' ' + changeOne);
+    console.log(toDestinationAlamein + ' ---> stay on the same train line ---> ' + changeOne);
+    console.log('Total stops = ' + (toDestinationAlamein.length + changeOne.length));
   }
   else if (glenWaverlyOrigin !== -1 && glenWaverlyDestination !== -1) {
-    console.log(toDestinationGlenWaverly + ' ' + changeTwo);
+    console.log(toDestinationGlenWaverly + ' ---> stay on the same train line ---> ' + changeTwo);
+    console.log('Total stops = ' + (toDestinationGlenWaverly.length + changeTwo.length));
   }
   else if (sandringhamOrigin !== -1 && sandringhamDestination !== -1) {
-    console.log(toDestinationSandringham + ' ' + changeThree);
+    console.log(toDestinationSandringham + ' ---> stay on the same train line ---> ' + changeThree);
+    console.log('Total stops = ' + (toDestinationSandringham.length + changeThree.length));
   }
   else if (alameinOrigin !== -1 && glenWaverlyDestination !== -1) {
-    console.log(toDestinationAlamein + ' ' + changeTwo);
+    console.log(toDestinationAlamein + ' ---> change trains at Richmond ---> ' + changeTwo);
+    console.log('Total stops = ' + (toDestinationAlamein.length + changeTwo.length));
   }
   else if (alameinOrigin !== -1 && sandringhamDestination !== -1) {
-    console.log(toDestinationAlamein + ' ' + changeThree);
+    console.log(toDestinationAlamein + ' ---> change trains at Richmond ---> ' + changeThree);
+    console.log('Total stops = ' + (toDestinationAlamein.length + changeThree.length));
   }
   else if (glenWaverlyOrigin !== -1 && alameinDestination !== -1) {
-    console.log(toDestinationGlenWaverly + ' ' + changeOne);
+    console.log(toDestinationGlenWaverly + ' ---> change trains at Richmond ---> ' + changeOne);
+    console.log('Total stops = ' + (toDestinationGlenWaverly.length + changeOne.length));
   }
   else if (glenWaverlyOrigin !== -1 && sandringhamDestination !== -1) {
-    console.log(toDestinationGlenWaverly + ' ' + changeThree);
+    console.log(toDestinationGlenWaverly + ' ---> change trains at Richmond ---> ' + changeThree);
+    console.log('Total stops = ' + (toDestinationGlenWaverly.length + changeThree.length));
   }
   else if (sandringhamOrigin !== -1 && alameinDestination !== -1) {
-    console.log(toDestinationSandringham + ' ' + changeOne);
+    console.log(toDestinationSandringham + ' ---> change trains at Richmond ---> ' + changeOne);
+    console.log('Total stops = ' + (toDestinationSandringham.length + changeOne.length));
   }
   else if (sandringhamOrigin !== -1 && glenWaverlyDestination !== -1) {
-    console.log(toDestinationSandringham + ' ' + changeOne);
+    console.log(toDestinationSandringham + ' ---> change trains at Richmond ---> ' + changeTwo);
+    console.log('Total stops = ' + (toDestinationSandringham.length + changeTwo.length));
   }
 }
 
