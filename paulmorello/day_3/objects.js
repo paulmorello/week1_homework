@@ -12,7 +12,10 @@ var recipe = {
 
 console.log(recipe.title);
 console.log(recipe.serves);
-console.log(recipe.ingredients);
+for (var i = 0; i < recipe.ingredients.length; i++) {
+  console.log('-' + recipe.ingredients[i]);
+}
+
 
 // Create an array of objects, where each object describes a book and has properties for the title (a string),
 // author (a string), and alreadyRead (a boolean indicating if you read it yet).
@@ -45,7 +48,6 @@ var theGirlOnTheTrain = {
 var books = [harryPotter, theHobbit, theGirlOnTheTrain];
 
 for (var index = 0; index < books.length; index++) {
-  console.log(books[index]);
   if (index === 0) {
     console.log(harryPotter.title + ' by ' + harryPotter.author);
   } else if (index === 1) {
@@ -53,7 +55,7 @@ for (var index = 0; index < books.length; index++) {
   } else {
     console.log(theGirlOnTheTrain.title + ' by ' + theGirlOnTheTrain.author);
   }
-}
+};
 
 // Create an object to store the following information about your favorite movie:
 // title (a string), duration (a number), and stars (an array of strings).
