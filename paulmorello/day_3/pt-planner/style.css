@@ -1,0 +1,175 @@
+@import 'https://fonts.googleapis.com/css?family=Francois+One';
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+h1 {
+  font-family: 'Francois One', sans-serif;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 3em;
+  width: 6em;
+  margin: 0;
+}
+
+.slogan {
+  font-family: 'Poiret One', serif;
+  text-align: left;
+  padding-left: 10px;
+  width: 11em;
+}
+
+h3 {
+  font-family: 'Poiret One', serif;
+  font-size: 1.5em;
+  border-bottom: 2px solid white;
+  width: 60%;
+  position: relative;
+  left: 18%;
+  padding: 5px;
+}
+
+.box {
+  background-color: #1d2023;
+  height: 28em;
+  position: relative;
+  background-color:
+}
+
+section {
+  margin: 20px;
+  display: inline-block;
+  color: white;
+}
+
+.user-info {
+  background-color: #5cc1af;
+  width: 40%;
+  height: 90%;
+  border: 3px solid white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.next-step {
+  width: 10%;
+  height: 20%;
+  bottom: 35%;
+  position: relative;
+  margin: auto 0;
+  font-size: 6em;
+}
+
+.user-display {
+  background-color: #5cc1af;
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+  bottom: 40%;
+  position: relative;
+  font-family: 'Poiret One', serif;
+  font-size: 2em;
+  padding-bottom: 35px;
+  border: 3px solid white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+input {
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+#display {
+  padding-top: 3em;
+}
+
+button {
+  display: block;
+  position: relative;
+  left: 35%;
+  padding: 10px;
+  width: 30%;
+  background-color: #5cc1af;
+  color: white;
+  border: 2px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: #5cc1af;
+  border: 2px solid white;
+}
+
+footer {
+  background-color: white;
+  height: 3em;
+  margin: 2.5%;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+@media (max-width: 1030px) {
+  .box {
+    height: 35em;
+  }
+
+  span {
+    visibility: hidden;
+  }
+
+  .user-info {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .user-display {
+    display: block;
+    margin: 0 auto;
+    bottom: 10%;
+    width: 80%;
+  }
+
+  footer {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 740px) {
+  .user-info {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .user-display {
+    display: block;
+    margin: 0 auto;
+    bottom: 10%;
+    width: 100%;
+}
